@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatau</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #fff8f0;">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/icon/LOGO.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto gap-4 font-poppins" style="transform: translateY(10px);">
+              <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container font-poppins">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="fs-1 fw-bold font-poppins">
+                        Tunjukan dirimu
+                    </h1>
+                    <h1 class="fs-1 fw-bold font-poppins">
+                        MAKE YOUR STYLE
+                    </h1>
+                    <p class="font-poppins" style="color:#555555 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda sint a corrupti voluptates reiciendis autem, et delectus? Nam recusandae id vitae temporibus, quidem nobis cumque nostrum nihil natus delectus.</p>
+                    
+                    <button class="btn btn-primary px-4 px-2 font-poppins">Belanja Sekarang</button>
+                </div>
+                <div class="col-6 text-end">
+                    <img src="assets/img/brand.png" alt="" width="500px">
+                </div>
+            </div>
+        </div>
+
+        <div class="container font-poppins mt-5">
+            <h1 class="fs-1 fw-bold font-poppins text-center">About Us</h1>
+            <p class="text-center mt-4" style="color:#555555;">
+                We are a team dedicated to providing the best fashion products to help you express yourself in style. Our journey started with a passion for design and innovation.
+            </p>
+        </div>
+
+        <div class="container font-poppins mt-5">
+            <h1 class="fs-1 fw-bold text-center">Our Products</h1>
+            <div class="row mt-4">
+                <div class="col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="card product-card text-center">
+                        <img src="assets/img/dress.png" alt="Dress" class="img-fluid mx-auto mt-3" style="width: 50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dress</h5>
+                            <p class="card-text">Stylish and modern wear for all occasions.</p>
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="card product-card text-center">
+                        <img src="assets/img/shirt.png" alt="Shirt" class="img-fluid mx-auto mt-3" style="width: 50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt</h5>
+                            <p class="card-text">Elegant and comfortable fashion for everyday.</p>
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="card product-card text-center">
+                        <img src="assets/img/shorts.png" alt="Shorts" class="img-fluid mx-auto mt-3" style="width: 50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Shorts</h5>
+                            <p class="card-text">Unique designs that make you stand out.</p>
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="container font-poppins mt-5">
+            <h1 class="fs-1 fw-bold font-poppins text-center">Contact Us</h1>
+            <form class="mt-4" action="submit_contact.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+<footer class="footer mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Logo and Description -->
+            <div class="col-md-4">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/icon/LOGO.png" alt="Logo" style="width: 80px;">
+                </a>
+                <p class="mt-3" style="color: var(--text-color);">
+                    We bring you the best fashion items to show off your true style. Follow us on social media to stay updated with our latest collections.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5 class="footer-title">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About</a></li>
+                    <li><a href="product.html" class="footer-link">Product</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h5 class="footer-title">Follow Us</h5>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="#" class="footer-social"><img src="assets/icon/facebook.png" alt="Facebook" width="30px"></a>
+                    <a href="#" class="footer-social"><img src="assets/icon/instagram.png" alt="Instagram" width="30px"></a>
+                    <a href="#" class="footer-social"><img src="assets/icon/twitter.png" alt="Twitter" width="30px"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0" style="color: var(--text-color);">
+                    &copy; 2024 Ridwanijazz. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

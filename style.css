@@ -1,0 +1,110 @@
+:root {
+    --primary : #814e2b;
+    --primary-focus : #734424;
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.font-archivo{
+    font-family: "Archivo", sans-serif !important;
+}
+
+.active {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover{
+    color: var(--primary);
+}
+
+.btn-primary{
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-focus);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.col-6 img {
+    margin-top: 40px;
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.product-card img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.product-card .card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.product-card .card-text {
+    font-family: "Poppins", sans-serif;
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+.product-card .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 0.5rem 2rem;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:hover .btn-primary {
+    background-color: var(--primary-focus);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .product-card img {
+        width: 50%;  /* Increase image width slightly for mobile */
+    }
+
+    .navbar-brand img{
+        width: 0px;
+    }
+
+    .row{
+        display: grid;
+    }
+
+    .product-card .card-title {
+        font-size: 1.1rem;  /* Slightly smaller text on mobile */
+    }
+
+    .product-card .card-text {
+        font-size: 0.9rem;  /* Adjust text size for mobile */
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1.5rem; /* Adjust button padding for mobile */
+    }
+}
